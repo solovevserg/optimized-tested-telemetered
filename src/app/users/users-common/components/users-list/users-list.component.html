@@ -1,1 +1,4 @@
-<user-list-card
+<qoollo-users-list-card
+  *ngFor="let user of users || []"
+  [user]="user"
+></qoollo-users-list-card>

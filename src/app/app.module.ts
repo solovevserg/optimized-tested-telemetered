@@ -7,12 +7,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialProxyModule } from './material-proxy/material-proxy.module';
+import { CoreModule } from './core/core.module';
+import { MenuModule } from './menu/menu.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    CoreModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
@@ -23,6 +26,7 @@ import { MaterialProxyModule } from './material-proxy/material-proxy.module';
     }),
     BrowserAnimationsModule,
     MaterialProxyModule,
+    MenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

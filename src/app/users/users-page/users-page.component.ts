@@ -8,10 +8,13 @@ import { UsersService } from '../users-common/services/users.service';
 })
 export class UsersPageComponent {
 
-  public readonly usersList = this.users.getUsers();
+  public readonly usersList$ = this.users.getUsers();
 
   constructor(
     private readonly users: UsersService,
-  ) { }
+  ) {
+    console.log(this.usersList$);
+
+  }
 
 }

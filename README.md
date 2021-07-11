@@ -1,5 +1,14 @@
 # OptimizedTestedTelemetered
 
+## What's new?
+
+1. docker-compose for further 
+2. Working unit tests for components and pipes
+3. Continuous linting with npm run lint:watch
+4. Angular SSR
+5. New modules structure suggestion
+6. Yarn package manager 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server

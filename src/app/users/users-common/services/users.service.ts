@@ -44,7 +44,7 @@ export class UsersService {
       return localUser;
     }
 
-    this.loadAllUsers();
+    await this.loadAllUsers();
     return this.users?.get(id);
   }
 

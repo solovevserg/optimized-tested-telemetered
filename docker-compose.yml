@@ -26,7 +26,7 @@ services:
           - redis:redis
       ports:
           - 8000:8000
-          - 80:8000
+          - 80:80
 volumes:
   postgres-data:
 version: '3'

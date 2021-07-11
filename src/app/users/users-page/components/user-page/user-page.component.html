@@ -1,0 +1,9 @@
+<ng-container *ngIf="user$ | async as user">
+  <h1>{{user.name}}</h1>
+  <h2>Age: {{user.age}}</h2>
+  <h2>Followers</h2>
+  <qoollo-users-list-card
+    *ngFor="let followerId of user.followers"
+    [user]="(followerId | userById | async) || undefined"
+  ></qoollo-users-list-card>
+</ng-container>

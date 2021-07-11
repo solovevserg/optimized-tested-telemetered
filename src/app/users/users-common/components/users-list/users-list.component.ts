@@ -7,15 +7,11 @@ import { User } from '../../../../shared/models/users/user';
   styleUrls: ['./users-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UsersListComponent implements OnInit {
-
+export class UsersListComponent {
 
   @Input()
-  public users?: User[]
+  public users?: User[];
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
